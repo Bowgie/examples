@@ -1,0 +1,37 @@
+Connecting to CoS SSH jumphost
+
+We recently upgraded our ssh jumphost from rhel 7 to rhel 9, which may cause you to recieve about a mismatched key.
+
+You will need to generate a new ssh key using the ssh-keygen command.
+
+First, open your terminal.
+
+You can do this in rhel by hitting:
+CTRL + ALT + T
+At the same time.
+
+Then run the command:
+ssh-keygen
+
+This generates a key, and asks for the file in which to store the private key.
+The public key is stored in a file with the same name but with .pub at the end.
+The private key you never share, while the public key can be shared freely.
+
+It will then ask to make a passphrase.
+Similar to a password, but a passphrase can be series of words, punctuations, numbers, whitespace, or any string of characters you want.
+A good passphrase is between 10 - 30 characters long.
+
+
+When trying to connect to the jumphost:
+ssh user@cos.gatech.edu -i ~/.ssh/id_ed25519 
+
+
+If you want to add this to your ssh config you can add:
+
+# ~/.ssh/config
+Host cos
+  Hostname cos.gatech.edu
+  User user
+  IdentityFile ~/.ssh/id_ed25519
+
+
