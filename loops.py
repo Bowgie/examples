@@ -1,5 +1,5 @@
 #Danny Hardawar
-#Notes from Chapter 4 - Python Crash Course - By Eric Matthews
+#Notes from Chapter 4 - Python Crash Course - By Eric Matthes
 
 
 magicians = ['alice', 'david', 'carolina']
