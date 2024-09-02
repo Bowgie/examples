@@ -1,5 +1,5 @@
 #Danny Hardawar
-#Notes from Chapter 3 - Python Crash Course - By Eric Matthews
+#Notes from Chapter 3 - Python Crash Course - By Eric Matthes
 
 #Square Brackets indicate a list
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
